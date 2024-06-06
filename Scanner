@@ -1,0 +1,7 @@
+package dispositivo;
+
+public interface Scanner {
+	
+	String scan();
+
+}
