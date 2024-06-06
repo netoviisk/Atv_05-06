@@ -1,0 +1,22 @@
+package dispositivo;
+
+public class DespositivoCombo extends Despositivos implements Scanner, Impressora {
+	
+	public DespositivoCombo(String numeroSerial) {
+		super(numeroSerial);
+	}
+
+	@Override
+	public void print(String documento) {	
+	}
+
+	@Override
+	public String scan() {
+		return null;
+	}
+
+	@Override
+	public void documentoProcessado(String documento) {
+	}
+
+}
