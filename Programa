@@ -1,0 +1,26 @@
+package aplicacao;
+
+import dispositivo.DespositivoCombo;
+import dispositivo.ImpressoraConcreto;
+import dispositivo.ScannerConcreto;
+
+public class Programa {
+
+	public static void main(String[] args) {
+
+		ImpressoraConcreto p = new ImpressoraConcreto("1080");
+		p.documentoProcessado("My Letter");
+		p.print("My Letter");
+
+		System.out.println();
+		ScannerConcreto s = new ScannerConcreto("2003");
+		s.documentoProcessado("My Email");
+		System.out.println("Scan result: " + s.scan());
+		
+		System.out.println();
+		DespositivoCombo c = new DespositivoCombo("2081");
+		c.documentoProcessado("My dissertation");
+		c.print("My dissertation");
+		System.out.println("Scan result: " + c.scan());
+	}
+}
