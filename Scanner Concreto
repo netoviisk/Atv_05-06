@@ -1,0 +1,20 @@
+package dispositivo;
+
+public class ScannerConcreto  extends Despositivos implements Scanner{
+	
+	public ScannerConcreto(String numeroSerial) {
+		super(numeroSerial);
+	}
+	
+	@Override
+	public void documentoProcessado(String documento) {
+		System.out.println("Processando Scanner: " + documento);
+	}
+	
+	@Override
+	public String scan() {
+		return "Conteudo Escaneado";
+	}
+
+	
+}
