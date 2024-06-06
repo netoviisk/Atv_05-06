@@ -1,0 +1,21 @@
+package dispositivo;
+
+public abstract class Despositivos {
+	
+	public String numeroSerial;
+	
+	public Despositivos (String numeroSerial) {
+		this.numeroSerial = numeroSerial;
+	}
+	
+	public String getnumeroSerial(){
+		return numeroSerial;
+	}
+	
+	public void setnumeroSerial(String numeroSerial) {
+		this.numeroSerial = numeroSerial;
+	}
+	
+	public abstract void documentoProcessado(String documento);
+
+}
