@@ -1,0 +1,18 @@
+package dispositivo;
+
+public class ImpressoraConcreto extends Despositivos implements Impressora {
+	
+	public ImpressoraConcreto(String documento) {
+		super(documento);
+	}
+	
+	@Override
+	public void documentoProcessado(String documento) {
+		System.out.println("Processando Scanner: " + documento);
+	}
+
+	@Override
+	public void print(String documento) {
+		System.out.println("Imprimindo: " + documento);
+	}
+}
